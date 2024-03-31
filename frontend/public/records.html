@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Records</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Records</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Verification</th>
+                <th>Verifier</th>
+                <th>Standard</th>
+                <th>Assurance</th>
+                <th>Scope</th>
+                <th>Disclosure</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.verification }}</td>
+                <td>{{ item.verifier }}</td>
+                <td>{{ item.standard }}</td>
+                <td>{{ item.assurance }}</td>
+                <td>{{ item.scope }}</td>
+                <td>{{ item.disclosure }}</td>
+                <td>{{ item.score }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

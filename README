@@ -1,0 +1,11 @@
+## task: 
+
+### install docker
+- [https://docs.docker.com/engine/install/](https://)
+
+### how to run
+- clone the repository
+- cd to jeos folder
+- build docker compose `docker-compose build`
+- start docker container `docker-compose up`
+- go to browser `localhost:3000` to view the frontend
