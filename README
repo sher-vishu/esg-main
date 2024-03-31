@@ -5,7 +5,8 @@
 
 ### how to run
 - clone the repository
-- cd to jeos folder
+- cd to main folder
 - build docker compose `docker-compose build`
 - start docker container `docker-compose up`
-- go to browser `localhost:3000` to view the frontend
+- go to browser `localhost:3000`
+- submit the form and verify the score accordingly
